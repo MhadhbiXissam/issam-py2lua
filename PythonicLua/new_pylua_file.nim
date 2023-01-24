@@ -14,6 +14,7 @@ path = path.strip()
 cwd = os.getcwd()
 new_file_path = "." + path + ".pylua"
 default_code = ""
+
 if path.endswith(".script") : 
     default_code = "def init(self) : \n\tpass\n\n\ndef final(self) : \n\tpass\n\n\ndef update(self, dt) : \n\tpass\n\n\ndef fixed_update(self, dt) : \n\tpass\n\n\ndef on_message(self, message_id, message, sender) : \n\tpass\n\n\ndef on_input(self, action_id, action) : \n\tpass\n\n\ndef on_reload(self) : \n\tpass\n"
 if path.endswith(".lua") : 
